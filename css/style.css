@@ -373,39 +373,51 @@ a { color: inherit; }
   display: block;
 }
 
-.project-thumb--nossa,
-.project-thumb--inqueritos,
-.project-thumb--dogao {
-  padding: 24px;
-  display: flex;
-  align-items: end;
-  gap: 16px;
-  position: relative;
-}
-
-.project-thumb--nossa {
-  background:
-    radial-gradient(circle at 90% 10%, rgba(255,90,149,.38), transparent 35%),
-    linear-gradient(145deg, #171d36, #29182f 55%, #11192f);
-}
-
-.project-thumb--inqueritos {
-  background:
-    radial-gradient(circle at 80% 10%, rgba(23,201,255,.28), transparent 35%),
-    linear-gradient(145deg, #0c1727, #0b2441 58%, #101328);
-}
-
-.project-thumb--dogao {
-  background:
-    radial-gradient(circle at 85% 10%, rgba(255,179,71,.26), transparent 35%),
-    linear-gradient(145deg, #21160b, #351b10 50%, #111827);
-}
 
 .project-thumb small {
   display: block;
   letter-spacing: .12em;
   color: #b9c4d6;
   margin-bottom: 3px;
+}
+
+.project-thumb--real {
+    position: relative;
+    height: 220px;
+    padding: 0;
+    overflow: hidden;
+    background: #0a1020;
+}
+
+.project-thumb--real img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+.project-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+
+    padding: 7px 11px;
+
+    border-radius: 999px;
+
+    background: rgba(5, 8, 22, 0.88);
+
+    border: 1px solid rgba(255,255,255,.18);
+
+    color: white;
+
+    font-size: 0.7rem;
+    font-weight: 600;
+
+    letter-spacing: .08em;
+
+    backdrop-filter: blur(8px);
 }
 
 .project-thumb strong { font-size: 1.28rem; }
