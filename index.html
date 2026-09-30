@@ -6,14 +6,25 @@
   <meta name="description" content="Portfólio de Nathan Santos — Desenvolvedor Web & Sistemas. Sites, sistemas, apps, automações e tracking com GA4 e GTM.">
   <title>Nathan Santos | Desenvolvedor Web & Sistemas</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="canonical" href="https://nathanpsantos.github.io/Portfolio_Nathan/">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#050816">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nathan Santos | Desenvolvedor Web & Sistemas">
+  <meta property="og:description" content="Sites, sistemas, apps, automações e tracking com foco em soluções digitais funcionais.">
+  <meta property="og:url" content="https://nathanpsantos.github.io/Portfolio_Nathan/">
+  <meta property="og:image" content="https://nathanpsantos.github.io/Portfolio_Nathan/images/nathan.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
 <header class="header">
-  <nav class="nav">
+  <nav class="nav" aria-label="Navegação principal">
     <a class="logo" href="#inicio">Nathan<span>.</span></a>
     <ul class="nav-links">
       <li><a href="#sobre"><i class="fa-solid fa-user"></i> Sobre</a></li>
@@ -25,7 +36,7 @@
   </nav>
 </header>
 
-<main>
+<main id="conteudo">
   <section id="inicio" class="hero">
     <div class="hero-content">
       <span class="eyebrow">TECNOLOGIA • ESTRATÉGIA • RESULTADOS</span>
@@ -55,7 +66,7 @@
 
     <div class="hero-image">
       <div class="photo-ring">
-        <img src="images/nathan.png" alt="Nathan Santos">
+        <img src="images/nathan.png" alt="Nathan Santos" fetchpriority="high" decoding="async">
       </div>
       <div class="hero-note">
         <i class="fa-solid fa-lightbulb"></i>
@@ -148,7 +159,7 @@
 
         <div class="project-thumb project-thumb--real">
           <img src="images/nossa-rotina-home.png"
-              alt="Aplicativo Nossa Rotina">
+              alt="Aplicativo Nossa Rotina" loading="lazy" decoding="async">
 
           <span class="project-badge">APP / PWA</span>
         </div>
@@ -190,7 +201,7 @@
           <div class="project-links">
             <a href="https://nossarotinaapp.com"
               target="_blank"
-              rel="noopener">
+              rel="noopener noreferrer">
 
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
               Ver app
@@ -211,7 +222,7 @@
 
         <div class="project-thumb project-thumb--real">
           <img src="images/dogao-do-galera.png"
-              alt="Sistema Dogão do Galera">
+              alt="Sistema Dogão do Galera" loading="lazy" decoding="async">
 
           <span class="project-badge">SISTEMA DE VENDAS</span>
         </div>
@@ -255,7 +266,7 @@
 
             <a href="https://dogao-do-galera-43b60.web.app"
               target="_blank"
-              rel="noopener">
+              rel="noopener noreferrer">
 
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
               Ver sistema
@@ -277,7 +288,7 @@
 
         <div class="project-thumb project-thumb--real">
           <img src="images/sistema-gestao-inqueritos.png"
-              alt="Sistema de Controle de Inquéritos">
+              alt="Sistema de Controle de Inquéritos" loading="lazy" decoding="async">
 
           <span class="project-badge">SISTEMA WEB</span>
         </div>
@@ -332,7 +343,7 @@
 
       <article class="project-card">
         <div class="project-thumb">
-          <img src="images/site-scb.png" alt="Preview do site Strategy Consulting Brasil">
+          <img src="images/site-scb.png" alt="Preview do site Strategy Consulting Brasil" loading="lazy" decoding="async">
         </div>
         <div class="project-body">
           <h3>Site – Strategy Consulting Brasil</h3>
@@ -341,7 +352,7 @@
             <span>HTML</span><span>CSS</span><span>JavaScript</span><span>UI/UX</span><span>Responsivo</span>
           </div>
           <div class="project-links">
-            <a href="https://www.strategyconsultingbrasil.com.br" target="_blank" rel="noopener">
+            <a href="https://www.strategyconsultingbrasil.com.br" target="_blank" rel="noopener noreferrer">
               <i class="fa-solid fa-arrow-up-right-from-square"></i> Acessar site
             </a>
           </div>
@@ -351,7 +362,7 @@
 
       <article class="project-card">
         <div class="project-thumb">
-          <img src="images/livro-ocorrencias.png" alt="Preview do sistema Livro Digital de Ocorrências">
+          <img src="images/livro-ocorrencias.png" alt="Preview do sistema Livro Digital de Ocorrências" loading="lazy" decoding="async">
         </div>
         <div class="project-body">
           <h3>Livro Digital de Ocorrências</h3>
@@ -360,15 +371,15 @@
             <span>Flask</span><span>SQLite</span><span>HTML/CSS</span><span>Exportação</span>
           </div>
           <div class="project-links">
-            <a href="https://nathanpsantos.github.io/livro-de-ocorrencias/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i> Ver</a>
-            <a href="https://github.com/NathanpSantos/livro-de-ocorrencias" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Código</a>
+            <a href="https://nathanpsantos.github.io/livro-de-ocorrencias/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-globe"></i> Ver</a>
+            <a href="https://github.com/NathanpSantos/livro-de-ocorrencias" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Código</a>
           </div>
         </div>
       </article>
 
       <article class="project-card">
         <div class="project-thumb">
-          <img src="images/controle-itens-casa.png" alt="Preview do projeto Controle de Itens de Casa">
+          <img src="images/controle-itens-casa.png" alt="Preview do projeto Controle de Itens de Casa" loading="lazy" decoding="async">
         </div>
         <div class="project-body">
           <h3>Controle de Itens de Casa</h3>
@@ -377,7 +388,7 @@
             <span>Flask</span><span>Web</span><span>Banco de Dados</span><span>Responsivo</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/NathanpSantos/Controle-de-Itens-da-Casa" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Código</a>
+            <a href="https://github.com/NathanpSantos/Controle-de-Itens-da-Casa" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Código</a>
           </div>
         </div>
       </article>
@@ -446,14 +457,14 @@
     <div class="projects-grid compact-projects">
       <article class="project-card">
         <div class="project-thumb">
-          <img src="images/cadastro-produtos.jpeg" alt="Preview do projeto Cadastro de Produtos">
+          <img src="images/cadastro-produtos.jpeg" alt="Preview do projeto Cadastro de Produtos" loading="lazy" decoding="async">
         </div>
         <div class="project-body">
           <h3>Cadastro de Produtos</h3>
           <p>Sistema para cadastro, atualização e consulta de produtos.</p>
           <div class="project-tags"><span>Python</span><span>Flask</span><span>Banco de Dados</span></div>
           <div class="project-links">
-            <a href="https://github.com/NathanpSantos/Cadastro_de_Ativos_Projeto_FINAL" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Código</a>
+            <a href="https://github.com/NathanpSantos/Cadastro_de_Ativos_Projeto_FINAL" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Código</a>
           </div>
         </div>
       </article>
@@ -464,7 +475,7 @@
           <p>Projeto de prática de lógica e interface desenvolvido durante meus estudos.</p>
           <div class="project-tags"><span>Python</span><span>Lógica</span><span>Estudo</span></div>
           <div class="project-links">
-            <a href="https://github.com/NathanpSantos/Calculadora-em-Python" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://github.com/NathanpSantos/Calculadora-em-Python" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
           </div>
         </div>
       </article>
@@ -475,7 +486,7 @@
           <p>Repositórios, exercícios, provas de conceito e outros projetos de desenvolvimento.</p>
           <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span></div>
           <div class="project-links">
-            <a href="https://github.com/NathanpSantos?tab=repositories" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Ver repositórios</a>
+            <a href="https://github.com/NathanpSantos?tab=repositories" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Ver repositórios</a>
           </div>
         </div>
       </article>
@@ -521,11 +532,11 @@
     </div>
 
     <div class="contact-links">
-      <a class="contact-primary" href="https://wa.me/5511998566270?text=Olá!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-      <a href="https://www.linkedin.com/in/nathan-santospr/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-      <a href="https://github.com/NathanpSantos" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
-      <a href="https://www.99freelas.com.br/user/Nathan-PSantos" target="_blank" rel="noopener"><i class="fa-solid fa-briefcase"></i> 99Freelas</a>
-      <a href="https://www.instagram.com/santos_npr/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Instagram</a>
+      <a class="contact-primary" href="https://wa.me/5511998566270?text=Olá!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://www.linkedin.com/in/nathan-santospr/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+      <a href="https://github.com/NathanpSantos" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+      <a href="https://www.99freelas.com.br/user/Nathan-PSantos" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-briefcase"></i> 99Freelas</a>
+      <a href="https://www.instagram.com/santos_npr/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> Instagram</a>
     </div>
   </section>
 </main>
